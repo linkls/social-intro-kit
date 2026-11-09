@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>自我介绍与破冰包 · 4 种场合 28 句现成话术</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{background:#F1EAE1}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  color:#33403D;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.app{max-width:430px;min-height:100vh;margin:0 auto;background:#FAF7F2;position:relative;overflow:hidden}
+.pad{padding:0 20px 50px}
+
+/* ---------- 通用 ---------- */
+.eyebrow{font-size:12px;letter-spacing:.18em;color:#9AA8A4;font-weight:600}
+.h1{font-size:29px;line-height:1.28;font-weight:800;letter-spacing:-.01em}
+.h2{font-size:18px;font-weight:800;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.h2::before{content:"";width:4px;height:16px;border-radius:3px;background:var(--teal)}
+.h3{font-size:15px;font-weight:800;margin:0 0 8px}
+.sub{color:#63736F;font-size:14px}
+.card{background:#fff;border-radius:22px;padding:20px 18px;box-shadow:0 6px 22px rgba(74,90,84,.07)}
+.tag{display:inline-block;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:700;background:#EAF3F0;color:#4E8C84}
+.tag.a{background:#FBEADC;color:#B46B3C}.tag.b{background:#E4F0ED;color:#4E8C84}
+.tag.c{background:#ECE9F7;color:#6E65A8}.tag.d{background:#E3ECF5;color:#4B7196}
+.rule{height:1px;background:#EFE8DF;margin:16px 0}
+.muted{color:#8C9A96;font-size:12.5px;line-height:1.75}
+.lead{color:#63736F;font-size:14.5px}
+
+/* ---------- 首页 ---------- */
+.hero{position:relative;padding:42px 0 6px;text-align:center}
+.blob{position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:200px;height:200px;
+  background:radial-gradient(circle at 35% 30%,#FBE3CE,#F6D5C2 45%,#DCEBE6 100%);
+  filter:blur(7px);opacity:.7;z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero .h1{margin:12px 0 8px}
+.hero .lead{color:#63736F;font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 2px}
+.chip{background:#fff;border:1px solid #EEE5DA;border-radius:999px;padding:6px 13px;font-size:12.5px;color:#5C6B67;font-weight:600}
+.tipbar{display:flex;gap:9px;align-items:flex-start;background:#EAF4F1;border-radius:16px;padding:13px 14px;margin:20px 0 0}
+.tipbar .ic{flex:0 0 26px;width:26px;height:26px;border-radius:9px;background:#71B0A4;color:#fff;font-size:14px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.tipbar .tx{flex:1;font-size:13px;color:#4B5C58;line-height:1.7}
+
+/* ---------- 速查表 ---------- */
+.quick{background:#fff;border-radius:22px;padding:16px 12px 12px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:16px}
+.qt{width:100%;border-collapse:collapse;table-layout:fixed}
+.qt th,.qt td{border-bottom:1px dashed #EFE8DF;padding:9px 6px;vertical-align:top;text-align:left;font-size:11.5px;line-height:1.55}
+.qt th{font-size:11.5px;color:#8C9A96;font-weight:800;letter-spacing:.02em;padding-bottom:8px}
+.qt td:first-child,.qt th:first-child{width:64px;padding-left:4px}
+.qt tr:last-child td{border-bottom:0}
+.qt .sc{font-weight:800;color:#33403D;font-size:12px}
+.qt .g{color:#54635F}
+.qt .v1{color:#3F6F68;font-weight:700}
+.qt .v2{color:#8A6238;font-weight:700}
+.qt .v3{color:#5E5790;font-weight:700}
+.qtcap{display:flex;align-items:center;justify-content:space-between;margin:0 4px 6px}
+.qtcap .t{font-size:15px;font-weight:800}
+.qtcap .b{font-size:11px;color:#A5AFA9}
+
+/* ---------- 场景 ---------- */
+.sc-head{display:flex;align-items:flex-start;gap:12px;margin:30px 0 12px}
+.sc-no{flex:0 0 38px;width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,#71B0A4,#4E8C84);color:#fff;
+  font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.sc-head .tt{flex:1}
+.sc-head .tt .n{font-size:19px;font-weight:800;line-height:1.35}
+.sc-head .tt .d{font-size:13px;color:#8C9A96;margin-top:3px}
+.ver{background:#fff;border-radius:20px;padding:17px 16px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-bottom:12px}
+.vhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.vhead .nm{font-size:15.5px;font-weight:800;display:flex;align-items:center;gap:8px}
+.vhead .dot{width:9px;height:9px;border-radius:50%}
+.copyall{border:1px solid #E9E1D6;background:#fff;border-radius:999px;padding:5px 12px;font-size:11.5px;color:#8C9A96;font-weight:700;cursor:pointer;font-family:inherit}
+.copyall:active{background:#F5F1EA}
+.line{display:flex;gap:10px;align-items:flex-start;padding:11px 12px;background:#FAF7F2;border:1px solid #EFE7DC;border-radius:14px;
+  margin-bottom:9px;cursor:pointer;transition:all .15s ease}
+.line:active{transform:scale(.99);border-color:#71B0A4;background:#EAF4F1}
+.line .tx{flex:1;font-size:14.5px;line-height:1.66;color:#3E4B48}
+.line .cp{flex:0 0 20px;width:20px;height:20px;border-radius:7px;background:#EAF3F0;color:#4E8C84;font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:3px}
+.meta{margin-top:12px;border-radius:14px;padding:12px 13px;background:#F7F3EC}
+.meta .r{display:flex;gap:10px;align-items:flex-start;padding:5px 0;font-size:13px;line-height:1.7;color:#54635F}
+.meta .r .k{flex:0 0 74px;font-size:11.5px;font-weight:800;color:#9AA8A4;letter-spacing:.02em;padding-top:2px}
+.meta .r .v{flex:1}
+.meta .r .v em{font-style:normal;color:#33403D;font-weight:700}
+
+/* ---------- 自测 ---------- */
+.qwrap{background:#fff;border-radius:24px;padding:22px 18px;box-shadow:0 8px 26px rgba(74,90,84,.08)}
+.qbar{height:7px;border-radius:99px;background:#EBE3D9;overflow:hidden;margin-bottom:16px}
+.qbar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#8FC7BC,#E9A178);transition:width .3s ease}
+.qcnt{font-size:12.5px;color:#8C9A96;font-weight:700;margin-bottom:9px}
+.qcnt b{color:#4E8C84;font-size:15px}
+.qtext{font-size:18px;font-weight:700;line-height:1.55;margin-bottom:16px}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;gap:11px;align-items:flex-start;text-align:left;width:100%;background:#FAF7F2;border:1.5px solid #EFE7DC;
+  border-radius:16px;padding:13px 14px;font-size:14.5px;line-height:1.6;color:#3E4B48;cursor:pointer;font-family:inherit;transition:all .15s ease}
+.opt:active{transform:scale(.99)}
+.opt .k{flex:0 0 23px;width:23px;height:23px;border-radius:8px;background:#EDE5DA;color:#8C9A96;font-size:12.5px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:2px}
+.opt.sel{border-color:#71B0A4;background:#EAF4F1}
+.opt.sel .k{background:#71B0A4;color:#fff}
+.backbtn{border:0;background:transparent;color:#8C9A96;font-size:13.5px;font-weight:600;cursor:pointer;font-family:inherit;padding:2px 0;margin-top:14px}
+.res-hero{border-radius:22px;padding:24px 20px;position:relative;overflow:hidden}
+.res-hero .kicker{font-size:12px;letter-spacing:.16em;font-weight:700;opacity:.78}
+.res-hero .tname{font-size:27px;font-weight:900;margin:8px 0 4px}
+.res-hero .oneline{font-size:14.5px;line-height:1.75;margin-top:12px}
+.res-list{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.res-item{background:#fff;border-radius:16px;padding:13px 14px;display:flex;gap:11px;align-items:flex-start;box-shadow:0 4px 16px rgba(74,90,84,.06)}
+.res-item .ic{flex:0 0 26px;width:26px;height:26px;border-radius:9px;color:#fff;font-size:13px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.res-item .tx{flex:1;font-size:14px;line-height:1.72;color:#4B5C58}
+.res-item .tx b{display:block;color:#33403D;font-size:14.5px;margin-bottom:3px}
+.rbtn{display:block;width:100%;padding:15px;border:0;border-radius:17px;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit;margin-top:11px}
+.rbtn.p{background:linear-gradient(135deg,#71B0A4,#4E8C84);color:#fff;box-shadow:0 8px 20px rgba(78,140,132,.24)}
+.rbtn.s{background:#fff;border:1px solid #E9E1D6;color:#6B7A76}
+
+.foot{text-align:center;color:#B0B8B4;font-size:11.5px;line-height:1.85;margin-top:26px}
+.toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%) translateY(20px);background:rgba(40,52,49,.93);
+  color:#fff;padding:11px 20px;border-radius:14px;font-size:14px;opacity:0;pointer-events:none;transition:all .28s ease;z-index:99}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(min-width:431px){.app{box-shadow:0 0 60px rgba(80,90,84,.10)}}
+
+/* ---------- 产品8 追加 ---------- */
+.sectnav{display:flex;gap:8px;margin:18px 0 0}
+.sectnav button{flex:1;border:1px solid #E9E1D6;background:#fff;border-radius:14px;padding:11px 6px;font-size:13px;font-weight:700;color:#5C6B67;cursor:pointer;font-family:inherit}
+.sectnav button:active{background:#F5F1EA}
+.disc{background:#F7F3EC;border-radius:16px;padding:13px 14px;margin-top:18px;font-size:12.5px;line-height:1.8;color:#7C8A86}
+.disc b{color:#54635F}
+.line .tx .lb{font-size:11.5px;color:#9AA7A3;font-weight:800;margin-right:6px}
+.exhead{font-size:12.5px;font-weight:800;color:#6E7D79;margin:14px 0 8px;padding-top:10px;border-top:1px dashed #E4DCD0}
+.bars{background:#fff;border-radius:20px;padding:16px 16px 18px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:14px}
+.bars .bt{font-size:13px;font-weight:800;color:#33403D;margin-bottom:14px}
+.barrow{margin-bottom:12px}
+.barrow .bl{display:flex;justify-content:space-between;font-size:12.5px;color:#54635F;font-weight:700;margin-bottom:6px}
+.barrow .bl span:last-child{color:#4E8C84;font-weight:800}
+.bar{height:9px;border-radius:99px;background:#EBE3D9;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#8FC7BC,#E9A178)}
+.scorebar{height:7px;border-radius:99px;background:#EBE3D9;overflow:hidden;margin:14px 0 6px}
+.scorebar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#8FC7BC,#E9A178)}
+.scoretxt{font-size:12px;color:#8C9A96;font-weight:700}
+.ver .vhead .nm{gap:6px}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <section class="pad" id="s-home">
+    <div class="hero">
+      <div class="blob"></div>
+      <div class="eyebrow">INTRO KIT</div>
+      <h1 class="h1">自我介绍与破冰包</h1>
+      <p class="lead">4 种场合的自我介绍，12 条破冰话题，8 个冷场起手式<br>新同事、见客户、加新群、认识新人</p>
+      <div class="chips">
+        <span class="chip">4 种场合</span>
+        <span class="chip">28 句可复制</span>
+        <span class="chip">1 张速查表</span>
+        <span class="chip">附 4 题开场小测</span>
+      </div>
+    </div>
+
+    <div class="tipbar">
+      <div class="ic">i</div>
+      <div class="tx">点任意一句就能复制，粘到对话框里把 X、Y、Z 换成你的事就能用。顶上的速查表适合进门前扫一眼。</div>
+    </div>
+
+    <div class="quick">
+      <div class="qtcap"><div class="t">30 秒速查表</div><div class="b">来不及看全文时看这张</div></div>
+      <table class="qt">
+        <thead><tr><th>场合</th><th>先说什么</th><th>接着问</th><th>收尾一句</th></tr></thead>
+        <tbody>
+<tr><td class="sc">新同事自我介绍</td><td class="g v1">姓名 + 岗位 + 现在做哪块</td><td class="g v2">散会后有问题随时找我</td><td class="g v3">说 30 秒版就停</td></tr>
+<tr><td class="sc">见客户</td><td class="g v1">姓名 + 负责哪块</td><td class="g v2">您这次想解决哪一件</td><td class="g v3">回去整理方案发您</td></tr>
+<tr><td class="sc">加新群</td><td class="g v1">姓名 + 负责哪块</td><td class="g v2">有想了解背景的直接问我</td><td class="g v3">先跟大家打个照面</td></tr>
+<tr><td class="sc">认识新人</td><td class="g v1">姓名 + 做什么</td><td class="g v2">你周末一般怎么过</td><td class="g v3">说一小段就抛问题</td></tr>
+<tr><td class="sc">破冰 12 条</td><td class="g v1">按办公室 / 饭局 / 线上 / 长辈 / 客户挑</td><td class="g v2">说出口后停一拍</td><td class="g v3">对方接不住就换一句</td></tr>
+<tr><td class="sc">冷场 8 问</td><td class="g v1">先问事，再问人</td><td class="g v2">接着问一句具体的</td><td class="g v3">接不上就换起手式</td></tr>
+<tr><td class="sc">开场难度自测</td><td class="g v1">4 道题</td><td class="g v2">轻 / 看场合 / 重 三档</td><td class="g v3">按档位看改法</td></tr>
+        </tbody>
+      </table>
+      <div class="rule"></div>
+      <div class="muted">用法：先认场合，再挑一句更贴近的改两个字。X、Y、Z 是占位符，Y 组、Z 项目请换成你自己的说法。</div>
+    </div>
+
+    <div class="sectnav">
+      <button onclick="goSection('s-intro')">自我介绍</button>
+      <button onclick="goSection('s-ice')">破冰话题</button>
+      <button onclick="goSection('s-open')">冷场起手</button>
+      <button onclick="showTest()">开场小测</button>
+    </div>
+
+    <div class="disc"><b>使用说明</b><br>本测试是自我观察工具，不构成专业心理评估、诊断或医疗建议。话术是参考句不是标准答案，请按你面对的人调整。</div>
+  </section>
+
+  <section class="pad" id="s-intro">
+    <div class="sc-head">
+      <div class="sc-no">说</div>
+      <div class="tt"><div class="n">自我介绍模板</div><div class="d">每种场合两版：30 秒版够用，1 分钟版给需要多讲两句的人。</div></div>
+    </div>
+<div class="sc-head" id="in1">
+<div class="sc-no">1</div>
+<div class="tt"><div class="n">新同事自我介绍</div><div class="d">一天里被介绍给很多人，说同一段话会累。准备两版，按场合切换。</div></div>
+</div>
+<div class="ver" id="iv1">
+<div class="vhead"><div class="nm"><span class="dot"></span>自我介绍模板</div><button class="copyall" data-group="iv1">复制整段</button></div>
+<div class="line" data-copy="大家好，我是 X，在 Y 组做 Z。以前主要做 A，这阵子接手 B。今天先认个脸，散会后有不懂的随时问我。"><div class="tx"><span class="lb">30 秒版</span>大家好，我是 X，在 Y 组做 Z。以前主要做 A，这阵子接手 B。今天先认个脸，散会后有不懂的随时问我。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="大家好，我是 X，在 Y 组做 Z。以前做 A 三年，这阵子接手 B 这块。今天先认个脸。手上在做一个关于 C 的项目，进度我每周会在群里同步一次，你想知道进度可以直接问我。散会后有问题随时来。"><div class="tx"><span class="lb">1 分钟版</span>大家好，我是 X，在 Y 组做 Z。以前做 A 三年，这阵子接手 B 这块。今天先认个脸。手上在做一个关于 C 的项目，进度我每周会在群里同步一次，你想知道进度可以直接问我。散会后有问题随时来。</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">早上到岗、团队会，或者有人带着你挨个见一圈人的时候。</div></div>
+<div class="r"><div class="k">场合提示</div><div class="v">说完就停，让别人先接话。一口气把三年的经历讲完，对方接不住。</div></div>
+</div>
+</div>
+<div class="sc-head" id="in2">
+<div class="sc-no">2</div>
+<div class="tt"><div class="n">见客户</div><div class="d">对方不关心你的履历，他在判断你能不能听懂他的问题。</div></div>
+</div>
+<div class="ver" id="iv2">
+<div class="vhead"><div class="nm"><span class="dot"></span>自我介绍模板</div><button class="copyall" data-group="iv2">复制整段</button></div>
+<div class="line" data-copy="您好，我是 X，负责 Y 这块。今天主要是想听听您这边的需求，回去我整理一份方案给您。"><div class="tx"><span class="lb">30 秒版</span>您好，我是 X，负责 Y 这块。今天主要是想听听您这边的需求，回去我整理一份方案给您。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="您好，我是 X，在 Y 做了 A 年。今天想先弄清两件事：您这次想解决的是哪一件，以及您希望多久看到变化。我记下来，回去整理成方案发您，不占用您太久。"><div class="tx"><span class="lb">1 分钟版</span>您好，我是 X，在 Y 做了 A 年。今天想先弄清两件事：您这次想解决的是哪一件，以及您希望多久看到变化。我记下来，回去整理成方案发您，不占用您太久。</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">头一次见面，或者客户已经明确约好了时间。</div></div>
+<div class="r"><div class="k">场合提示</div><div class="v">少讲自己多问对方。两句提问比一段自我介绍管用。</div></div>
+</div>
+</div>
+<div class="sc-head" id="in3">
+<div class="sc-no">3</div>
+<div class="tt"><div class="n">加新群</div><div class="d">群里没人认识你，一句话打个照面，比潜水到底好。</div></div>
+</div>
+<div class="ver" id="iv3">
+<div class="vhead"><div class="nm"><span class="dot"></span>自我介绍模板</div><button class="copyall" data-group="iv3">复制整段</button></div>
+<div class="line" data-copy="大家好，我是 X，在 Y 做 Z。先跟大家打个照面，之后有交集再聊。"><div class="tx"><span class="lb">30 秒版</span>大家好，我是 X，在 Y 做 Z。先跟大家打个照面，之后有交集再聊。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="大家好，我是 X，在 Y 做 Z，主要负责 B 这块。群里大家的方向我还在看，有想先了解背景的可以直接问我，不用客气。"><div class="tx"><span class="lb">1 分钟版</span>大家好，我是 X，在 Y 做 Z，主要负责 B 这块。群里大家的方向我还在看，有想先了解背景的可以直接问我，不用客气。</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">被拉进新群、换了岗位、跨组协作刚开始的时候。</div></div>
+<div class="r"><div class="k">场合提示</div><div class="v">说清你负责哪一块，比说清你多厉害有用。</div></div>
+</div>
+</div>
+<div class="sc-head" id="in4">
+<div class="sc-no">4</div>
+<div class="tt"><div class="n">认识新人</div><div class="d">相亲、朋友介绍、线下活动认识陌生人，都用这一版。</div></div>
+</div>
+<div class="ver" id="iv4">
+<div class="vhead"><div class="nm"><span class="dot"></span>自我介绍模板</div><button class="copyall" data-group="iv4">复制整段</button></div>
+<div class="line" data-copy="我是 X，做 Z 的。今天来主要是想认识一下，先说说我自己，你也可以随时打断我。"><div class="tx"><span class="lb">30 秒版</span>我是 X，做 Z 的。今天来主要是想认识一下，先说说我自己，你也可以随时打断我。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="我是 X，做 Z 的。这阵子在忙 A，简单说两句：你平时周末一般怎么过？我这边跑步和做饭轮着来，感觉有点无聊。"><div class="tx"><span class="lb">1 分钟版</span>我是 X，做 Z 的。这阵子在忙 A，简单说两句：你平时周末一般怎么过？我这边跑步和做饭轮着来，感觉有点无聊。</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">相亲、朋友介绍、线下活动认识陌生人。</div></div>
+<div class="r"><div class="k">场合提示</div><div class="v">说一小段就抛一个具体问题，别让介绍变成独白。</div></div>
+</div>
+</div>
+    <div class="disc"><b>使用说明</b><br>本测试是自我观察工具，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-ice">
+    <div class="sc-head">
+      <div class="sc-no">聊</div>
+      <div class="tt"><div class="n">初次见面破冰话题</div><div class="d">12 条，按办公室 / 饭局 / 线上 / 长辈 / 客户分组，每条都给说出口的版本和对方的可能反应。</div></div>
+    </div>
+<div class="sc-head" id="icA">
+<div class="sc-no">A</div>
+<div class="tt"><div class="n">办公室</div><div class="d">同事之间，话不用大，问点具体的小事更省力。</div></div>
+</div>
+<div class="ver" id="ivA">
+<div class="vhead"><div class="nm"><span class="dot"></span>破冰话题</div><button class="copyall" data-group="ivA">复制整段</button></div>
+<div class="line" data-copy="刚看你桌上那盆绿萝长得挺好，它是养了多久了？"><div class="tx"><span class="lb">说出口</span>刚看你桌上那盆绿萝长得挺好，它是养了多久了？</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：去年同事搬走留下的。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>那它算你接手的老伙计了。</div></div>
+<div class="line" data-copy="你们这边下午茶一般几点？我刚来还没摸清节奏。"><div class="tx"><span class="lb">说出口</span>你们这边下午茶一般几点？我刚来还没摸清节奏。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：三点半吧，楼下那家。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>那我先把杯子带上。</div></div>
+<div class="line" data-copy="这层楼里哪台咖啡机出品的还好喝？我试过两台，差别挺大。"><div class="tx"><span class="lb">说出口</span>这层楼里哪台咖啡机出品的还好喝？我试过两台，差别挺大。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：靠窗那台豆子新。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>靠窗那台，行，记住了。</div></div>
+</div>
+<div class="sc-head" id="icB">
+<div class="sc-no">B</div>
+<div class="tt"><div class="n">饭局</div><div class="d">饭桌上先认菜、认位置，比认人更容易开口。</div></div>
+</div>
+<div class="ver" id="ivB">
+<div class="vhead"><div class="nm"><span class="dot"></span>破冰话题</div><button class="copyall" data-group="ivB">复制整段</button></div>
+<div class="line" data-copy="这道菜是你推荐的吗？我来过两次都点它。"><div class="tx"><span class="lb">说出口</span>这道菜是你推荐的吗？我来过两次都点它。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：对对对，这家招牌。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>那我再加一份，帮我留个座。</div></div>
+<div class="line" data-copy="你们平时聚会一般玩什么？我对这边的玩法还不熟。"><div class="tx"><span class="lb">说出口</span>你们平时聚会一般玩什么？我对这边的玩法还不熟。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：打牌、桌游都有。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>那我先看一轮，你们玩。</div></div>
+<div class="line" data-copy="这一桌里你更推荐哪个？我想试没吃过的。"><div class="tx"><span class="lb">说出口</span>这一桌里你更推荐哪个？我想试没吃过的。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：中间那个，别错过。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>那我先动中间那个。</div></div>
+</div>
+<div class="sc-head" id="icC">
+<div class="sc-no">C</div>
+<div class="tt"><div class="n">线上</div><div class="d">文字聊天里，破冰从对方发过的东西下手。</div></div>
+</div>
+<div class="ver" id="ivC">
+<div class="vhead"><div class="nm"><span class="dot"></span>破冰话题</div><button class="copyall" data-group="ivC">复制整段</button></div>
+<div class="line" data-copy="你头像那张是哪儿拍的？光线挺好看的。"><div class="tx"><span class="lb">说出口</span>你头像那张是哪儿拍的？光线挺好看的。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：上次旅行的时候。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>哪儿值得专门去一趟？</div></div>
+<div class="line" data-copy="你前两天发的那个链接我存下来了，还没看，是讲什么的？"><div class="tx"><span class="lb">说出口</span>你前两天发的那个链接我存下来了，还没看，是讲什么的？</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：一套效率工具的用法。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>我也想找这类的，你还有推荐吗？</div></div>
+</div>
+<div class="sc-head" id="icD">
+<div class="sc-no">D</div>
+<div class="tt"><div class="n">长辈</div><div class="d">长辈场合慢半拍，先夸具体的，再接一句家常。</div></div>
+</div>
+<div class="ver" id="ivD">
+<div class="vhead"><div class="nm"><span class="dot"></span>破冰话题</div><button class="copyall" data-group="ivD">复制整段</button></div>
+<div class="line" data-copy="阿姨您这盆花养得真好，这个季节正开得精神。"><div class="tx"><span class="lb">说出口</span>阿姨您这盆花养得真好，这个季节正开得精神。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：随便种的，没怎么管。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>随手的才养得住，我那个一养就死。</div></div>
+<div class="line" data-copy="叔叔您这套工具挺讲究，家里平时自己修东西吗？"><div class="tx"><span class="lb">说出口</span>叔叔您这套工具挺讲究，家里平时自己修东西吗？</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：修过一批老家具。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>那手艺是练出来的，闲了教教我。</div></div>
+</div>
+<div class="sc-head" id="icE">
+<div class="sc-no">E</div>
+<div class="tt"><div class="n">客户</div><div class="d">客户场合别急着递资料，先把场子聊热。</div></div>
+</div>
+<div class="ver" id="ivE">
+<div class="vhead"><div class="nm"><span class="dot"></span>破冰话题</div><button class="copyall" data-group="ivE">复制整段</button></div>
+<div class="line" data-copy="您这办公室采光真好，白天都不用开灯。"><div class="tx"><span class="lb">说出口</span>您这办公室采光真好，白天都不用开灯。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：朝南，下午更亮。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>那您下午办公状态应该不错。</div></div>
+<div class="line" data-copy="您桌上那本子我记得您提过，说电子的记不住，所以带了纸的。"><div class="tx"><span class="lb">说出口</span>您桌上那本子我记得您提过，说电子的记不住，所以带了纸的。</div><div class="cp">拷</div></div>
+<div class="exhead">对方可能这么接：对，还是纸的踏实。</div>
+<div class="line"><div class="tx"><span class="lb">你接</span>那后续的材料我也给您留一份纸质的。</div></div>
+</div>
+    <div class="disc"><b>使用说明</b><br>本测试是自我观察工具，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-open">
+    <div class="sc-head">
+      <div class="sc-no">接</div>
+      <div class="tt"><div class="n">冷场开场问题</div><div class="d">8 个起手式，每个都配了什么时候用和接着问哪一句。</div></div>
+    </div>
+<div class="ver" id="ov1">
+<div class="vhead"><div class="nm"><span class="dot"></span>起手式 1</div></div>
+<div class="line" data-copy="你今天过来路上还顺利吗？"><div class="tx">你今天过来路上还顺利吗？</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">刚见面、对方刚坐下的时候。</div></div>
+<div class="r"><div class="k">接着问一句</div><div class="v">今天来办事还是顺路串个门？</div></div>
+</div>
+</div>
+<div class="ver" id="ov2">
+<div class="vhead"><div class="nm"><span class="dot"></span>起手式 2</div></div>
+<div class="line" data-copy="你手上这件事现在到哪一步了？"><div class="tx">你手上这件事现在到哪一步了？</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">和对方熟一点之后，问近况用。</div></div>
+<div class="r"><div class="k">接着问一句</div><div class="v">现在卡在哪儿？</div></div>
+</div>
+</div>
+<div class="ver" id="ov3">
+<div class="vhead"><div class="nm"><span class="dot"></span>起手式 3</div></div>
+<div class="line" data-copy="这段时间有什么让你觉得还不错的小事吗？"><div class="tx">这段时间有什么让你觉得还不错的小事吗？</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">对方不太主动的时候。</div></div>
+<div class="r"><div class="k">接着问一句</div><div class="v">愿意讲两句吗？</div></div>
+</div>
+</div>
+<div class="ver" id="ov4">
+<div class="vhead"><div class="nm"><span class="dot"></span>起手式 4</div></div>
+<div class="line" data-copy="你这阵子在追什么剧，或者听什么歌？"><div class="tx">你这阵子在追什么剧，或者听什么歌？</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">线上聊天、群里的破冰。</div></div>
+<div class="r"><div class="k">接着问一句</div><div class="v">好看在哪一段？</div></div>
+</div>
+</div>
+<div class="ver" id="ov5">
+<div class="vhead"><div class="nm"><span class="dot"></span>起手式 5</div></div>
+<div class="line" data-copy="如果今天提前下班，你想去哪儿待一会儿？"><div class="tx">如果今天提前下班，你想去哪儿待一会儿？</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">和同事稍微熟一点。</div></div>
+<div class="r"><div class="k">接着问一句</div><div class="v">那边有什么好吃的？</div></div>
+</div>
+</div>
+<div class="ver" id="ov6">
+<div class="vhead"><div class="nm"><span class="dot"></span>起手式 6</div></div>
+<div class="line" data-copy="你手机里存了哪些舍不得删的照片？"><div class="tx">你手机里存了哪些舍不得删的照片？</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">话题快断的时候。</div></div>
+<div class="r"><div class="k">接着问一句</div><div class="v">这是什么时候拍的？</div></div>
+</div>
+</div>
+<div class="ver" id="ov7">
+<div class="vhead"><div class="nm"><span class="dot"></span>起手式 7</div></div>
+<div class="line" data-copy="你觉得自己拿手的是哪一块？"><div class="tx">你觉得自己拿手的是哪一块？</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">聊到工作、对方又谦虚的时候。</div></div>
+<div class="r"><div class="k">接着问一句</div><div class="v">是练出来的还是撞出来的？</div></div>
+</div>
+</div>
+<div class="ver" id="ov8">
+<div class="vhead"><div class="nm"><span class="dot"></span>起手式 8</div></div>
+<div class="line" data-copy="这段时间有让你改主意的瞬间吗？"><div class="tx">这段时间有让你改主意的瞬间吗？</div><div class="cp">拷</div></div>
+<div class="meta">
+<div class="r"><div class="k">什么时候用</div><div class="v">对方话少，你想换个方向。</div></div>
+<div class="r"><div class="k">接着问一句</div><div class="v">后来呢？</div></div>
+</div>
+</div>
+    <div class="disc"><b>使用说明</b><br>本测试是自我观察工具，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-test">
+    <div class="sc-head">
+      <div class="sc-no">测</div>
+      <div class="tt"><div class="n">你开场难度是轻是重</div><div class="d">4 道题，看你是开口不费劲，还是要挑人挑场合。</div></div>
+    </div>
+    <div class="qwrap" id="qwrap"></div>
+    <div class="disc"><b>使用说明</b><br>本测试是自我观察工具，不构成专业心理评估、诊断或医疗建议。结果只反映你这次的选择。</div>
+  </section>
+
+  <div class="foot">
+    自我介绍与破冰包 · 4 种场合 12 条破冰话题 8 个起手式<br>
+    单文件网页，手机打开即用，断网也能看
+  </div>
+
+</div>
+<div class="toast" id="toast"></div>
+<!--QUIZ:4 RESULT:3-->
+<script>
+var QZ = [["到一个新场合，你通常会——",[["先坐着，等别人来介绍",[0,0,0]],["跟旁边的人搭上一句话",[1,1,1]],["主动认几个人，先开口",[2,2,2]]]],["要自我介绍时，你脑子里先冒出来的是——",[["一片空白，硬着头皮说",[0,0,1]],["姓名岗位加一句爱好",[1,2,1]],["提前想好几句，开场就不慌",[2,2,2]]]],["对方问「你是做什么的」，你会——",[["含糊带过，别多聊",[0,1,0]],["如实说清岗位和方向",[1,2,1]],["多说两句，让对方有话接",[2,2,2]]]],["聊到一半冷场了，你——",[["赶紧找借口离开",[0,0,0]],["问一个具体问题救场",[1,1,2]],["顺势把话题转到别处",[2,2,2]]]]];
+var RES = [["轻度开场型","开口对你来说不算难事。你缺的不是勇气，是一个能直接抄的开场句。",8,[[["把开场句提前写成两版","30 秒版和 1 分钟版各一条，存进手机备忘录。"],["开口之后停一拍","话说完停一下，对方才有接话的余地。"],["多给半句能被接住的信息","别人问你是做什么的，除了岗位，再补一句方向或者近期在忙什么。"],["冷场时用问题救","包里备好八个起手式，脑子里有一个能念的句子就不慌。"]]],"今天挑一个刚认识的人，用这个包里的一句话开场，把你用的那句记下来。","#4E8C84"],["看场合型","你能开口，但会挑人挑场景：熟的人放得开，陌生一点的人就先卡住。",15,[[["先认场合再选句子","同事、客户、陌生人，用的句子本来就不一样。"],["一次只交一个人","别想着一次认识全场，先跟一个人聊到有下文。"],["把自我介绍压到 30 秒","超过一分钟的自我介绍，陌生人接不住。"],["给自己排一句固定开场","同一句话重复三次就不卡了，卡的是流程，不是你。"]]],"今天用一句话跟三个刚认识的人搭话，说完在备忘录里记一句你的感受。","#E9A178"],["重度开场型","开口前的那几秒很磨人。你不是不会聊，是心里要先把场面想明白才敢出声。",99,[[["把开口拆小","先问一句，再介绍一句，不用一次做完。"],["先在文字上热身","群里先发一条消息，把话术热起来，再去面对面。"],["给自己留一个有人接话的地方","茶水间、同事工位、电梯里，先在这种场合开口。"],["允许自己只说一句","说一句也是开口，完成比漂亮重要。"]]],"今天找一次只需要说一句的场合：问路、借东西，或者接一句同事的话。","#8E86C4"]];
+var DIMS = [["prep","准备度"],["press","开口压力"],["save","临场救场"]];
+var qi = 0, picks = [];
+
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('on');},1500);}
+function copyText(txt){
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(function(){toast('已复制，去聊天框里粘上');},function(){fallback(txt);});
+  } else { fallback(txt); }
+}
+function fallback(txt){
+  var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');toast('已复制，去聊天框里粘上');}catch(e){toast('长按选中这段文字也可以复制');}
+  document.body.removeChild(ta);
+}
+document.addEventListener('click',function(e){
+  var line=e.target.closest('[data-copy]');
+  if(line){copyText(line.getAttribute('data-copy'));return;}
+  var grp=e.target.closest('[data-group]');
+  if(grp){
+    var id=grp.getAttribute('data-group');
+    var box=document.getElementById(id);
+    var lines=box?box.querySelectorAll('[data-copy]'):[];
+    var arr=[];for(var i=0;i<lines.length;i++){arr.push(lines[i].getAttribute('data-copy'));}
+    copyText(arr.join('\n'));return;
+  }
+  var opt=e.target.closest('.opt');
+  if(opt){pick(parseInt(opt.getAttribute('data-i'),10));return;}
+});
+
+function goSection(id){
+  var el=document.getElementById(id);
+  if(el){window.scrollTo(0,el.offsetTop-8);}
+}
+function showTest(){qi=0;picks=[];renderQ();goSection('s-test');}
+function renderQ(){
+  var wrap=document.getElementById('qwrap');
+  if(qi>=QZ.length){renderResult();return;}
+  var q=QZ[qi];
+  var h='<div class="qcnt">第 <b>'+(qi+1)+'</b> / '+QZ.length+' 题</div>';
+  h+='<div class="qbar"><i style="width:'+Math.round((qi+1)/QZ.length*100)+'%"></i></div>';
+  h+='<div class="qtext">'+q[0]+'</div><div class="opts">';
+  for(var i=0;i<q[1].length;i++){
+    h+='<button class="opt" data-i="'+i+'"><span class="k">'+'ABC'[i]+'</span><span>'+q[1][i][0]+'</span></button>';
+  }
+  h+='</div><button class="backbtn" onclick="goSection(\'s-open\')">先返回上面看看起手式</button>';
+  wrap.innerHTML=h;
+}
+function pick(i){
+  var q=QZ[qi];
+  if(!q) return;
+  picks.push(q[1][i][1]);
+  qi++;
+  renderQ();
+}
+function renderResult(){
+  var w=0,l=0,it=0;
+  for(var i=0;i<picks.length;i++){w+=picks[i][0];l+=picks[i][1];it+=picks[i][2];}
+  var total=w+l+it;
+  var band=RES[2];
+  for(var j=0;j<RES.length;j++){ if(total<=RES[j][2]) { band=RES[j]; break; } }
+  var mx=QZ.length*2;
+  var h='<div class="res-hero" style="background:linear-gradient(135deg,'+band[5]+'22,'+band[5]+'0A)">';
+  h+='<div class="kicker" style="color:'+band[5]+'">开场难度 · 测试结果</div>';
+  h+='<div class="tname" style="color:'+band[5]+'">'+band[0]+'</div>';
+  h+='<div class="oneline" style="color:#4B5C58">'+band[1]+'</div>';
+  h+='</div>';
+  h+='<div class="bars"><div class="bt">三项得分（每项满分 '+mx+'）</div>';
+  var vals=[w,l,it];
+  for(var k=0;k<DIMS.length;k++){
+    var pct=Math.round(vals[k]/mx*100);
+    h+='<div class="barrow"><div class="bl"><span>'+DIMS[k][1]+'</span><span>'+vals[k]+' / '+mx+'</span></div>';
+    h+='<div class="bar"><i style="width:'+pct+'%"></i></div></div>';
+  }
+  h+='<div class="scoretxt">总分 '+total+' / '+(mx*3)+' 分</div>';
+  h+='<div class="scorebar"><i style="width:'+Math.round(total/(mx*3)*100)+'%"></i></div>';
+  h+='</div>';
+  h+='<div class="res-list">';
+  for(var t=0;t<band[3][0].length;t++){
+    h+='<div class="res-item"><div class="ic" style="background:'+band[5]+'">'+(t+1)+'</div><div class="tx"><b>'+band[3][0][t][0]+'</b>'+band[3][0][t][1]+'</div></div>';
+  }
+  h+='</div>';
+  h+='<div class="disc"><b>今天能完成的小练习</b><br>'+band[4]+'</div>';
+  h+='<button class="rbtn p" onclick="showTest()">再测一次</button>';
+  h+='<button class="rbtn s" onclick="goSection(\'s-home\')">回到首页</button>';
+  document.getElementById('qwrap').innerHTML=h;
+}
+</script>
+</body>
+</html>
